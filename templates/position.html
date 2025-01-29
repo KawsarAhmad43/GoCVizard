@@ -1,0 +1,14 @@
+{{ define "content" }}
+<h1>Set Position</h1>
+<form method="POST" action="/position">
+    <div class="mb-3">
+        <label for="title" class="form-label">Position Title</label>
+        <input type="text" class="form-control" id="title" name="title" required>
+    </div>
+    <div class="mb-3">
+        <label for="skills" class="form-label">Skills (comma-separated)</label>
+        <input type="text" class="form-control" id="skills" name="skills" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+{{ end }}

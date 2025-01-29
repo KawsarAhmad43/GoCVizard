@@ -1,0 +1,10 @@
+{{ define "content" }}
+<h1>Upload CV</h1>
+<form method="POST" action="/upload" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="cv" class="form-label">Upload PDF</label>
+        <input type="file" class="form-control" id="cv" name="cv" accept="application/pdf" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Upload</button>
+</form>
+{{ end }}
